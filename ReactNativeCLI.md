@@ -5,6 +5,15 @@ Install SDK version 21 and 29 (all)
 Install SDK tools 29.02 (if possible all)
 Install Intel HXAM
 
+add path to .bashrc or .bash_profile 
+```
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
 > Install HomeBrew:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -88,6 +97,11 @@ Set the JAVA Home directory from the above got value after removing "bin/java" a
 export JAVA_HOME="path_to_java_home"
 ```
 
+Now open Android studio and open the created project's android folder
+Start the App!!
+
+
+> Below is an alternative (which is not working though)
 Starting Android Application requires another terminal and type in the below command
 ```
 npx react-native run-android
